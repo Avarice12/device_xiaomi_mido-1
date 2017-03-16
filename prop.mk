@@ -234,3 +234,10 @@ persist.vendor.qti.inputopts.movetouchslop=0.6
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.havoc.maintainer=hungphan2001
+
+
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
