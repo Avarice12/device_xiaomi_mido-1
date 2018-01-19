@@ -135,6 +135,9 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS :=  0x2000
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
+
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
