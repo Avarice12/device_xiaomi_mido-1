@@ -223,6 +223,9 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-03-05
 
+# Shims
+TARGET_LD_SHIM_LIBS := /vendor/lib64/hw/gxfingerprint.default.so|fakelogprint.so:/vendor/lib64/hw/fingerprint.goodix.so|fakelogprint.so:/vendor/bin/gx_fpd|fakelogprint.so
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
