@@ -118,6 +118,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Dexpreopt Apk
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 TARGET_USES_ION := true
