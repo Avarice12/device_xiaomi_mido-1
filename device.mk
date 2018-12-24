@@ -69,6 +69,13 @@ PRODUCT_COPY_FILES += \
 # Device Properties
 -include $(LOCAL_PATH)/prop.mk
 
+# Alipay
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
