@@ -227,7 +227,7 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-12-05
+VENDOR_SECURITY_PATCH := 2019-01-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
