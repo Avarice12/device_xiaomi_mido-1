@@ -540,4 +540,7 @@
          and currently depends on QC's proprietary telephony stack -->
     <bool name="config_enableManualSubProvisioning">true</bool>
 
+    <!-- Alternate ambient display-->
+    <bool name="config_alt_ambient_display">true</bool>
+
 </resources>
