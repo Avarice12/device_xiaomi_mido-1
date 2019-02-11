@@ -387,19 +387,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AdvancedControls \
 
-# Extras
-PRODUCT_PACKAGES += \
-    Gcam \
-    Musicolet \
-    MiXplorer
-
-# More Extras
-PRODUCT_PACKAGES += \
-    Dialer \
-    Contacts \
-    Messaging \
-    Recorder
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
