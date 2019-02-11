@@ -1,2 +1,6 @@
 # vibrator
 allow system_server sysfs_vibrator:file read;
+
+# Allow system_server to set persist_camera_prop
+get_prop(system_server, persist_camera_prop)
+get_prop(system_server, vendor_camera_prop)
