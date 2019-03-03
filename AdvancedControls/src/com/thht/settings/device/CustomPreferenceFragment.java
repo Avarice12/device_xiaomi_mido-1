@@ -98,7 +98,7 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
             KcalPresets.setValue(currValue);
         }
 
-        editor.commit();
+        editor.apply();
 
         return true;
     }
