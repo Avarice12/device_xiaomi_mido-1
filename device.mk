@@ -33,9 +33,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-# HWUI and Dalvik VM overrides
-$(call inherit-product, device/xiaomi/mido/phone-xxhdpi-3072-dalvik-heap.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -404,3 +401,4 @@ PRODUCT_BOOT_JARS += \
 # AdvancedControls
 PRODUCT_PACKAGES += \
     AdvancedControls \
+	Updates

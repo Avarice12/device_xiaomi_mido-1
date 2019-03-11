@@ -224,3 +224,7 @@ dalvik.vm.image-dex2oat-filter=speed
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.qti.inputopts.enable=true \
 persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ion.maintainer=hungphan2001
