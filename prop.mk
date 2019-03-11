@@ -226,4 +226,4 @@ persist.vendor.qti.inputopts.movetouchslop=0.6
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.ion.maintainer=hungphan2001
+ro.havoc.maintainer=hungphan2001
