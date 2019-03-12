@@ -33,9 +33,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-# HWUI and Dalvik VM overrides
-$(call inherit-product, device/xiaomi/mido/phone-xxhdpi-3072-dalvik-heap.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -117,6 +114,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
     libmm-qcamera \
+    GoogleCameraMod \
     Snap
 
 # Configstore
@@ -142,13 +140,14 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     liboverlay \
+    libqdMetaData \
     libqdMetaData.system \
     libgenlock \
     libtinyxml
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+   XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -397,3 +396,4 @@ PRODUCT_BOOT_JARS += \
 # AdvancedControls
 PRODUCT_PACKAGES += \
     AdvancedControls \
+	Updater

@@ -11,7 +11,6 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.view.MenuItem;
 
-import com.thht.settings.device.dirac.DiracSettingsFragment;
 import com.thht.settings.device.helpers.StaticMembers;
 import com.thht.settings.device.helpers.Utils;
 import com.thht.settings.device.kcal.KcalExtrasDialogFragment;
@@ -25,7 +24,7 @@ import android.util.Log;
 public class CustomPreferenceFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
     // UI elements
-    Preference mDiracPref;
+    //Preference mDiracPref;
     Preference mVibratorPref, mYTorchPref, mWTorchPref;
     Preference mKCALRPref, mKCALGPref, mKCALBPref;
     Preference mKCALMinPref, mKCALSatPref, mKCALHuePref;
@@ -98,7 +97,7 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
             KcalPresets.setValue(currValue);
         }
 
-        editor.apply();
+        editor.commit();
 
         return true;
     }
@@ -157,13 +156,7 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
                     0, 255, 128,
                     StaticMembers.KEY_KCAL_SCR_CONT).
                     show(getFragmentManager(), "KcalCont");
-        } else if (preference == mDiracPref) {
-            getFragmentManager().beginTransaction().
-                    replace(R.id.container, new DiracSettingsFragment()).
-                    addToBackStack("AdvCntrlDirac").
-                    commit();
         }
-
         return true;
     }
 
@@ -172,9 +165,8 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
         // categories
         mKCALExtrasCat = (PreferenceCategory) findPreference(StaticMembers.KEY_CATEGORY_KCAL_EXTRAS);
         mKCALScrCat = (PreferenceCategory) findPreference(StaticMembers.KEY_CATEGORY_SCREEN_COLOR);
-        
         // preferences
-        mDiracPref = findPreference(StaticMembers.KEY_DIRAC);
+        //mDiracPref = findPreference(StaticMembers.KEY_DIRAC);
         mYTorchPref = findPreference(StaticMembers.KEY_YELLOW_TORCH_BRIGHTNESS);
         mWTorchPref = findPreference(StaticMembers.KEY_WHITE_TORCH_BRIGHTNESS);
         mVibratorPref = findPreference(StaticMembers.KEY_VIB_STRENGTH);
@@ -209,6 +201,8 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
 
     // Disable unsupported elements
     private void sanitise() {
+        // dirac
+        //mDiracPref.setEnabled(Utils.isPackageInstalled(getContext(), "org.lineageos.settings"));
 
         // torch
         mYTorchPref.setEnabled(TorchBrightnessDialogFragment.isSupported(StaticMembers.FILE_LEVEL_TORCH_YELLOW));
@@ -277,7 +271,6 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
         mKCALHuePref.setOnPreferenceClickListener(this);
         mKCALValPref.setOnPreferenceClickListener(this);
         mKCALContPref.setOnPreferenceClickListener(this);
-        mDiracPref.setOnPreferenceClickListener(this);
     }
 
     // disable kcal manual settings when using a profile
