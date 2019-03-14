@@ -129,7 +129,7 @@ av.debug.disable.pers.cache=1 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
-mm.enable.smoothstreaming=true \
+mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
 vendor.mm.enable.qcom_parser=1048575 \
@@ -195,7 +195,8 @@ telephony.lteOnCdmaDevice=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.timed.enable=true
+persist.timed.enable=true \
+persist.delta_time.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
