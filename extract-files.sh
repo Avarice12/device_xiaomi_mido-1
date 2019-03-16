@@ -19,15 +19,16 @@
 set -e
 
 DEVICE=mido
+DEVICE_COMMON=msm8953-common
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+DU_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+HELPER="$DU_ROOT"/vendor/du/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -56,19 +57,25 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$DU_ROOT" true "$CLEAN_VENDOR"
 
-extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
-DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+if [ -s "$MY_DIR"/proprietary-files.txt ]; then
+    # Reinitialize the helper for device
+    setup_vendor "$DEVICE" "$VENDOR" "$DU_ROOT" false "$CLEAN_VENDOR"
 
-sed -i \
-    's/\/system\/etc\//\/vendor\/etc\//g' \
-    "$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_sensor_modules.so
+    extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
-sed -i \
-     "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
-     "$DEVICE_BLOB_ROOT"vendor/bin/mm-qcamera-daemon
+    DEVICE_BLOB_ROOT="$DU_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+    sed -i \
+        's/\/system\/etc\//\/vendor\/etc\//g' \
+        "$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_sensor_modules.so
+
+    sed -i \
+         "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
+         "$DEVICE_BLOB_ROOT"/vendor/bin/mm-qcamera-daemon
+fi
 
 "$MY_DIR"/setup-makefiles.sh
