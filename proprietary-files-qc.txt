@@ -296,7 +296,6 @@ vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|4334331e65c3c85e0
 vendor/bin/mm-pp-dpps|c281ee28274eeff6273091ae07aa1856a0c160db
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib/libdisp-aba.so|36607c5e618110dee7fb32591311a2fc1ff40363
 vendor/lib/vendor.display.color@1.0.so|7ac574753dc34619c9b445023386891d41ed566d
 vendor/lib/vendor.display.postproc@1.0.so|2144a235e058e6ab16b39ee93faa8016c0b71e4f
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|62e91f0b3f7d8855febd0c3584f5364c801d6a40
