@@ -19,7 +19,6 @@
 set -e
 
 DEVICE=mido
-DEVICE_COMMON=msm8953-common
 VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2017
@@ -30,7 +29,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 HAVOC_ROOT="${MY_DIR}/../../.."
 
-HELPER="$HAVOC_ROOT/vendor/aosp/build/tools/extract_utils.sh"
+HELPER="$HAVOC_ROOT/vendor/havoc/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -66,13 +65,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${AOSP_ROOT}" true "${CLEAN_VENDOR}"
-
-extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" \
-        "${KANG}" --section "${SECTION}"
-
-if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
 
     setup_vendor "${DEVICE}" "${VENDOR}" "${HAVOC_ROOT}" false "${CLEAN_VENDOR}"
@@ -88,7 +80,8 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
 
     sed -i \
          "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
-         "${DEVICE_BLOB_ROOT}/vendor/bin/mm-qcamera-daemon"
-fi
+         "${DEVICE_BLOB_ROOT}/vendor/bin/mm-qcamera-daemon"    
 
-"${MY_DIR}/setup-makefiles.sh"
+"${MY_DIR}/setup-makefiles.sh" "${CLEAN_VENDOR}"
+
+
