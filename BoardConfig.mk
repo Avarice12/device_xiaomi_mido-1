@@ -219,7 +219,7 @@ TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-01-05
+VENDOR_SECURITY_PATCH := 2019-03-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
