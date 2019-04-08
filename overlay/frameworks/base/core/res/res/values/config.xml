@@ -479,5 +479,7 @@
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
 
+	<!-- Enable support for camera api v2 -->
+    <bool name="support_camera_api_v2">true</bool>
 </resources>
 
