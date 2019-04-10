@@ -218,9 +218,6 @@ TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 
-# IPA
-USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-01-05
 
@@ -255,4 +252,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
