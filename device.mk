@@ -306,6 +306,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
+    init.spectrum.rc \
     init.target.rc \
     move_time_data.sh \
     move_wifi_data.sh \
