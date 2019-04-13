@@ -1134,7 +1134,8 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|c262d97c9a3d08a7befda9355
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so|1d53f109141b00d84aa69f90ebfe1dd87913e783
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so|81296c2077590e6f16ac8fc0c8e9e6eb0f5661bb
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|571a25c2049c68fb8b3201ae2bdfbe02618ac785
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|5b9a5cbd38884b854bb98d8aaf6337405ff115d1vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|5b9a5cbd38884b854bb98d8aaf6337405ff115d1
+vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
 # Radio (IMS) - from Tissot PKQ1.180917.001/V10.0.7.0.PDHMIXM
 -priv-app/ims/ims.apk|10d64cbbd275431b5e346296c66d894685f8ff8e
