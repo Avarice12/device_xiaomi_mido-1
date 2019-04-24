@@ -336,11 +336,6 @@ on property:sys.boot_completed=1
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
     write /sys/block/sda/queue/iostats 1
-	
-	#Wakeup fix
-    chown system system /sys/devices/soc/qpnp-smbcharger-18/power_supply/battery/subsystem/bms/hi_power
-    chmod 0664 /sys/devices/soc/qpnp-smbcharger-18/power_supply/battery/subsystem/bms/hi_power
-    write /sys/devices/soc/qpnp-smbcharger-18/power_supply/battery/subsystem/bms/hi_power 1
 
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
@@ -537,4 +532,3 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "anxiety"
     swapon_all /vendor/etc/fstab.qcom
-
