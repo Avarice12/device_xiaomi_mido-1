@@ -13,3 +13,4 @@ allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
 allow init sysfs:file setattr;
 allow init sysfs_leds:lnk_file r_file_perms;
 #allow init shell_exec:file execute_no_trans;
+allow init system_file:file execute_no_trans;
