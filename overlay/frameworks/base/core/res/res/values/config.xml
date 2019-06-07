@@ -507,4 +507,7 @@ translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
 
     <!-- Remote server that can provide NTP responses. -->
     <string translatable="false" name="config_ntpServer">1.android.pool.ntp.org</string>
+	
+	<!-- Whether to enable Qualcomm Boost Framework -->
+    <bool name="config_enableQcCpuBoost">true</bool>
 </resources>
