@@ -22,18 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 
-# Inherit some common HavocOS stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
+# Inherit some common Lotus stuff
+$(call inherit-product, vendor/lotus/config/common_full_phone.mk)
 
 # Official
-export export HAVOC_BUILD_TYPE=Official
+export LOTUS_BUILD_TYPE=Official
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := havoc_mido
+PRODUCT_NAME := lotus_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi

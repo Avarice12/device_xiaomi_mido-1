@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_mido.mk
+    $(LOCAL_DIR)/lotus_mido.mk
