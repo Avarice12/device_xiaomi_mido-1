@@ -25,6 +25,9 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Lotus stuff
 $(call inherit-product, vendor/lotus/config/common_full_phone.mk)
 
+# Inherit MiUI camera
+$(call inherit-product, vendor/xiaomi/MiuiCamera/mido.mk)
+
 # Official
 export LOTUS_BUILD_TYPE=Official
 
