@@ -404,4 +404,4 @@ PRODUCT_BOOT_JARS += \
 # AdvancedControls
 PRODUCT_PACKAGES += \
     AdvancedControls \
-	Updater
+Updates
