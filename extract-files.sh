@@ -72,7 +72,6 @@ fi
     extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
             "${KANG}" --section "${SECTION}"
 
-<<<<<<< HEAD
     DEVICE_BLOB_ROOT="${HAVOC_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
     sed -i \
@@ -81,22 +80,19 @@ fi
 
     sed -i \
          "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
-         "${DEVICE_BLOB_ROOT}/vendor/bin/mm-qcamera-daemon"    
-=======
-BLOB_ROOT="${AOSP_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
-    
-sed -i \
-	's/\/system\/etc\//\/vendor\/etc\//g' \
-	"${BLOB_ROOT}/vendor/lib/libmmcamera2_sensor_modules.so"
+         "${DEVICE_BLOB_ROOT}/vendor/bin/mm-qcamera-daemon" 
+ 
+        ;;
+        vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so|vendor/lib64/libsoftkeymasterdevice-v27.so|vendor/lib64/libkeymaster_messages-v27.so|vendor/lib64/libkeymaster_portable-v27.so|vendor/lib64/libkeymaster_staging-v27.so|vendor/lib64/libsoftkeymaster-v27.so)
+                patchelf --replace-needed "libsoftkeymasterdevice.so" "libsoftkeymasterdevice-v27.so" "${2}"
+                patchelf --replace-needed "libkeymaster_messages.so" "libkeymaster_messages-v27.so" "${2}"
+                patchelf --replace-needed "libkeymaster_portable.so" "libkeymaster_portable-v27.so" "${2}"
+                patchelf --replace-needed "libkeymaster_staging.so" "libkeymaster_staging-v27.so" "${2}"
+                patchelf --replace-needed "libsoftkeymaster.so" "libsoftkeymaster-v27.so" "${2}"
+                patchelf --set-soname $(basename "${2}") "${2}"
+        ;;
 
-sed -i \
-	"s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
-	"${BLOB_ROOT}/vendor/bin/mm-qcamera-daemon"
-
-patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${BLOB_ROOT}/vendor/bin/mlipayd"
-patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${BLOB_ROOT}/vendor/lib64/libmlipay.so"
->>>>>>> 3c4d5d6... mido: Support Alipay fingerprint payment
+    patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${BLOB_ROOT}/vendor/bin/mlipayd"
+    patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${BLOB_ROOT}/vendor/lib64/libmlipay.so"   
 
 "${MY_DIR}/setup-makefiles.sh" "${CLEAN_VENDOR}"
-
-
