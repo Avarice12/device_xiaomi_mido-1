@@ -243,3 +243,8 @@ ro.havoc.maintainer=hungphan2001
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.min.fling_velocity=160 \
 ro.max.fling_velocity=20000
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.lotus.maintainer=hungphan2001
+
