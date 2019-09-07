@@ -29,7 +29,7 @@ $(call inherit-product, vendor/lotus/config/common_full_phone.mk)
 $(call inherit-product, vendor/xiaomi/MiuiCamera/mido.mk)
 
 # Official
-#export LOTUS_BUILD_TYPE=Official
+export LOTUS_BUILD_TYPE=Official
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
