@@ -165,6 +165,9 @@ on boot
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
+# Thermal Profile
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
