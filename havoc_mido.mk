@@ -23,7 +23,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 
 
 # Inherit some common Lotus stuff
-$(call inherit-product, vendor/lotus/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit MiUI camera
 $(call inherit-product, vendor/xiaomi/MiuiCamera/mido.mk)
@@ -37,7 +37,7 @@ TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := lotus_mido
+PRODUCT_NAME := havoc_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
