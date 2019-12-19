@@ -55,3 +55,6 @@
 /sys/kernel/fast_charge/force_fast_charge                    u:object_r:sysfs_fastcharge:s0
 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness          u:object_r:sysfs_torch:s0
 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness           u:object_r:sysfs_torch:s0
+
+# Service HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
