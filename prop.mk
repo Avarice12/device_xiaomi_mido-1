@@ -4,8 +4,8 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=2 \
-audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
+audio.offload.disable=false \
 audio.offload.video=true \
 persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
