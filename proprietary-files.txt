@@ -868,7 +868,6 @@ vendor/lib/egl/libGLESv1_CM_adreno.so|17bbde3fd2a67234581be29370f45d12f91f1869
 vendor/lib/egl/libGLESv2_adreno.so|5b0bda9867b5ed6f565673d88f8cc9e1eed80f9c
 vendor/lib/egl/libQTapGLES.so|cac808c7cbf53c69b1ece6af02db7d3a55d95dc2
 vendor/lib/egl/libq3dtools_adreno.so|8ac17e630fbc58771efafd30fe7b4c5d919a6b6d
-vendor/lib/hw/vulkan.msm8953.so|3f6ce053000783b2a769368b0ab950a319c3dd01
 vendor/lib/libC2D2.so|c04a5ac1e576f63ebe91aba14bf917ee9e382be0
 vendor/lib/libCB.so|77f244f872d387b275cd10d1f2d222f873e9b9fc
 vendor/lib/libOpenCL.so|5445775afc782df5d74880c59967a8a4b5cc1c1c
@@ -889,7 +888,6 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so|9f8f826f14a769965eb77f2a8d7e273fb45eb89c
 vendor/lib64/egl/libGLESv2_adreno.so|134e223d08876186e12563b3d19f33402b726167
 vendor/lib64/egl/libQTapGLES.so|c51b557ebbb26b95759e1423ad5a614641ed5abf
 vendor/lib64/egl/libq3dtools_adreno.so|df634f895bfc993482613f7026e5bdde3fe7783f
-vendor/lib64/hw/vulkan.msm8953.so|9acff8ed6f06cef04b1105946de6569eb134c261
 vendor/lib64/libC2D2.so|ff2d4947c7924376ff66517461246d238e221e05
 vendor/lib64/libCB.so|2bf3fe9566aa9a81d3b239e9b90e46d48ffd5a79
 vendor/lib64/libOpenCL.so|9db02d203536f029f206e10033feb5f54de06be6
@@ -935,6 +933,10 @@ vendor/lib64/libsdm-diag.so|87373a043267b9b3bb923931a910119a9deb425f
 -vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
 vendor/lib64/libsdmextension.so|133db0462e62fa331eb622b02528b5cdcc08a446
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
+
+# Graphics (Vulkan) - from daisy - QKQ1.191002.002
+vendor/lib64/hw/vulkan.msm8953.so|8c01e237bdc542ca682cb97ce28f264135033fab|b09121b664897181c29ec5a529117772a971229b
+vendor/lib/hw/vulkan.msm8953.so|c24dee59782e94c119e1e6ae00ac05c2d67c3f93|6142249d50da115d9fe3b20581dbeedd961727c3
 
 # Graphics firmware - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
