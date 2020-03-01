@@ -32,3 +32,6 @@ type sysfs_fastcharge, sysfs_type, fs_type;
 type sysfs_rpm, sysfs_type, fs_type;
 type debugfs_easel, debugfs_type, fs_type;
 type debugfs_rpm, debugfs_type, fs_type;
+
+# FPS Info
+type sysfs_fps, sysfs_type, fs_type;
