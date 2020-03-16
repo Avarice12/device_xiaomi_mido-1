@@ -133,7 +133,8 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbt-vendor
+    libbt-vendor \
+    libldacBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
