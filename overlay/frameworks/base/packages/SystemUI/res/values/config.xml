@@ -29,9 +29,9 @@
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
     <!-- The CPU temperature sensor path, defaults to empty -->
-    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone3/temp</string>
+    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
 
     <!-- The CPU temperature divider, if needed -->
-    <integer name="config_cpuTempDivider" translatable="false">1</integer>
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 	
 </resources>
