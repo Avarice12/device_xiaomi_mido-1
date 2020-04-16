@@ -4,8 +4,6 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=2 \
-audio.offload.disable=false \
-audio.deep_buffer.media=true \
 audio.offload.video=true \
 persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
