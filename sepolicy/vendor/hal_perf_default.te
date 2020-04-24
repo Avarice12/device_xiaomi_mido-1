@@ -1,0 +1,2 @@
+# Perf
+allow hal_perf_default device:file r_file_perms;
