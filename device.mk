@@ -159,6 +159,9 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     liboverlay \
+    libdisplayconfig.vendor \
+    libqdMetaData \
+    libqdMetaData.vendor \
     libqdMetaData.system \
     libgenlock \
     libtinyxml
@@ -398,6 +401,6 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
     libnl
-
+    libwfdaac
 PRODUCT_BOOT_JARS += \
     WfdCommon
