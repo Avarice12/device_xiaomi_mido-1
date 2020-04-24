@@ -25,6 +25,9 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Corvus stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
+# Inherit from custom vendor
+$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
+
 # Build Type
 DU_BUILD_TYPE := OFFICIAL
 
