@@ -14,3 +14,13 @@ genfscon proc /touchpanel	u:object_r:proc_touchpanel:s0
 
 #PowerHal
 genfscon sysfs /bus/msm_subsys                                       u:object_r:sysfs_msm_subsys:s0
+
+# XiaomiParts
+genfscon sysfs /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
+genfscon sysfs /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
+
+# EAS PowerHal (Debugfs)
+genfscon debugfs /mnh_sm                              u:object_r:debugfs_easel:s0
+genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
+genfscon debugfs /rpm_master_stats                    u:object_r:debugfs_rpm:s0
+genfscon debugfs /system_stats                        u:object_r:debugfs_rpm:s0
