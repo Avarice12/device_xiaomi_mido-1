@@ -993,6 +993,12 @@ vendor/lib/libvqzip.so|24e5eb30e5a2cdb544c8688d81d7cc75a1d85eaf
 vendor/lib64/libqti-perfd-client.so|d16c17427d6383368d035c9bf028630837b3b969
 vendor/lib/libqti-perfd-client.so|c1c7482b58fbe012f934b54bea78ff52068ea530
 
+# Perf Game - from OnePlus6
+lib/libdolphin.so|bc32d9007b017efc904a3ad4fb64cde10d453b28
+lib/libqti-at.so|b7a141762aacb9d3819c98c191e94d6b83de7ffa
+lib64/libdolphin.so|699e7332b8a5a1217beef6acbe18b0c4c89a3fcc
+lib64/libqti-at.so|1a1c22ca37a7dc1aae4ef4660a734764ff1041d0
+
 # msm_irqbalance - from Sailfish QP1A.191005.007
 vendor/bin/msm_irqbalance|77ef07d24e1d42c8539271477dc65b087956a1c1
 
