@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libvulkan \
     liboverlay \
     libdisplayconfig.vendor \
     libqdMetaData \
