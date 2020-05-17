@@ -1641,13 +1641,9 @@ case "$target" in
             hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
 
-        echo 0 > /proc/sys/kernel/sched_boost
-
         if [ -f /sys/devices/soc0/platform_subtype_id ]; then
             platform_subtype_id=`cat /sys/devices/soc0/platform_subtype_id`
         fi
-
-        echo 0 > /proc/sys/kernel/sched_boost
 
         case "$soc_id" in
             "293" | "304" | "338" | "351")
@@ -1971,6 +1967,26 @@ case "$target" in
             fi
             echo 1 > /sys/module/big_cluster_min_freq_adjust/parameters/min_freq_adjust
 
+            # Disable sched boost
+            echo 0 > /proc/sys/kernel/sched_boost
+            echo 0 > /dev/stune/schedtune.boost
+            echo 0 > /dev/stune/audio-app/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/audio-app/schedtune.sched_boost_no_override
+            echo 0 > /dev/stune/audio-app/schedtune.boost
+            echo 0 > /dev/stune/audio-app/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/audio-app/schedtune.sched_boost_no_override
+            echo 0 > /dev/stune/background/schedtune.boost
+            echo 0 > /dev/stune/background/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/background/schedtune.sched_boost_no_override
+            echo 0 > /dev/stune/foreground/schedtune.boost
+            echo 0 > /dev/stune/foreground/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/foreground/schedtune.sched_boost_no_override
+            echo 0 > /dev/stune/rt/schedtune.boost
+            echo 0 > /dev/stune/rt/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/rt/schedtune.sched_boost_no_override
+            echo 0 > /dev/stune/top-app/schedtune.boost
+            echo 0 > /dev/stune/top-app/schedtune.sched_boost_enabled
+            echo 0 > /dev/stune/top-app/schedtune.sched_boost_no_override
             ;;
         esac
     ;;
