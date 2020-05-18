@@ -164,7 +164,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData.vendor \
     libqdMetaData.system \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    Snap
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
