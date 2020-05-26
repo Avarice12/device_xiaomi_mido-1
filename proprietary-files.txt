@@ -3,12 +3,12 @@ vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
 vendor/lib/libadsprpc.so|a17e796a9ede3f7ecaf3f60f2794cdd374d60b4c
 vendor/lib/libadsp_default_listener.so|c9a1ee00b32a93a9496ec84393afa0625e929eed
 vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
-vendor/lib/libfastcvopt.so|2df00c3827fe1db322084cb3935241f17d1532f4
+vendor/lib/libfastcvopt.so|8a6e46acd3c8d510f7554a09fc5b82bb09dec23a
 vendor/lib/libmdsprpc.so|8eddd199ae7a78f47196855f2e081f6e76da2a5a
 vendor/lib64/libadsprpc.so|fbf3b6390a5b41def0dae0eac9b85d0d7e5ba43f
 vendor/lib64/libadsp_default_listener.so|d7436ae6255671b4c3af533b5c89d91d75d5069e
 vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
-vendor/lib64/libfastcvopt.so|f5e25aa055a57e23530b858bf7dd204a6009effc
+vendor/lib64/libfastcvopt.so|74bd528909f5179ada6fe0317cc3620906439680
 vendor/lib64/libmdsprpc.so|c9995d06bad26f97e1475e6c7471257e93fa8f82
 
 # ADSP modules - LA.UM.8.6.r1-04000-89xx.0
@@ -861,51 +861,51 @@ vendor/lib64/vendor.qti.gnss@2.1.so|79d924c8006b33b358bf9e3d9a21ff2fe8a937df
 vendor/lib64/vendor.qti.gnss@3.0-service.so|53f5c24b57a3157b6b48fc56e6ab67b70ed8fa48
 vendor/lib64/vendor.qti.gnss@3.0.so|48b718e175dbf6156ded10a056a47d4988319395
 
-# Graphics - from daisy - QKQ1.191002.002
+# Graphics - from Taimen-RPP4.200409
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
-vendor/lib/egl/eglSubDriverAndroid.so|d0f0f243aeb41720cbc052c2344918c5d588659c
-vendor/lib/egl/libEGL_adreno.so|a3bb3c748cc180521a3b0ea173e714a55c01b118
-vendor/lib/egl/libGLESv1_CM_adreno.so|43c864f0c3f384085f9d19a2e1d56e672f319ea6
-vendor/lib/egl/libGLESv2_adreno.so|15104ce575d5fb6282502fcf73ea27b6f52429bc
-vendor/lib/egl/libQTapGLES.so|957d9c98f3c29e7bf1da02fedac0789ada49dc70
-vendor/lib/egl/libq3dtools_adreno.so|b4b7bda387620de5f6ea2a29406f9351e855b8ed
-vendor/lib/egl/libq3dtools_esx.so|1972c5a7747579d14519681855e6bc4e424fc7f0
-vendor/lib/libC2D2.so|c04a5ac1e576f63ebe91aba14bf917ee9e382be0
-vendor/lib/libCB.so|15986a50f98c979833e5d651eedcffaf19e54e3b
-vendor/lib/libOpenCL.so|9ee3900265f9b855f526c0ce4fcfdaed51d62003
-vendor/lib/libRSDriver_adreno.so|51e8ebcd4584726cbee21a4486b6f37ce5e716f1
-vendor/lib/libadreno_utils.so|3a09e6720121f5b459a1fc7f9639b632da5832ec
-vendor/lib/libbccQTI.so|124156259b7900ac44c48dd9cf83b210d02d8c9d
-vendor/lib/libc2d30_bltlib.so|4a486823ef2a9ea14f4f02c9eb9053ac5fb028af
-vendor/lib/libgsl.so|2ddafd66848dfd146bbaf184b69f92df9f79c99f
+vendor/lib/egl/eglSubDriverAndroid.so|091021709596e0757ab69188ea42fb046faab09a
+vendor/lib/egl/libEGL_adreno.so|525f5bdd126fd10d5053824b4d6c793c11d96c09
+vendor/lib/egl/libGLESv1_CM_adreno.so|c80fbec1dfc02a226bc8345a61e7368719ce27e7
+vendor/lib/egl/libGLESv2_adreno.so|9d087cd30e71ed5057dca7a09cc5db5e172b824b
+vendor/lib/egl/libQTapGLES.so|c0e0d96e813716ca8dc3add0e9983a19e8b6d406
+vendor/lib/egl/libq3dtools_adreno.so|d43f50b38edd98a548ea9ca216077f22dac0ad97
+vendor/lib/egl/libq3dtools_esx.so|a57690f5b0747d7845a022296e85d31b4c87b837
+vendor/lib/libC2D2.so|41c3dc4690aba025ec37ef95c09ce43252c07fea
+vendor/lib/libCB.so|2b3b51a70527f7bddc463c8e1808b4200fb13698
+vendor/lib/libOpenCL.so|90dd47a0a0bdcd5632e437d0c66a4e9aed9aa419
+vendor/lib/libRSDriver_adreno.so|f0cd0cd3b662ef26965eaa952dcc858555c2fbeb
+vendor/lib/libadreno_utils.so|668bd94d17c7d8d7d5eb10c80b5b7af3060ced18
+vendor/lib/libbccQTI.so|211ebb7159a41917bfc98fdf816b7c8d0f1fa2e6
+vendor/lib/libc2d30_bltlib.so|9b54b59c72277d94ee81223efeb5fc1e190fcc0f
+vendor/lib/libgsl.so|32db65dcbc00e172a5d91e10ab270b3ecfecfcab
 vendor/lib/libhdr_tm.so|4c371d0931245a65d0b4df768de8837bbdf4832e
-vendor/lib/libllvm-glnext.so|a28adae3ae758cdffc889d681b3cdefe24351c32
-vendor/lib/libllvm-qcom.so|3079ae9049c8758664e6ade78837e0fc6c2272d5
+vendor/lib/libllvm-glnext.so|1eed0390c1fc63763914e31c0a97f06b8bff271f
+vendor/lib/libllvm-qcom.so|a5442e65e81bf66ae7d551d7801908f8fa3ff4c0
 vendor/lib/libmm-hdcpmgr.so|9a877103235d55a6ba788060cd974c09e769a0b5
-vendor/lib/librs_adreno.so|9f0022a5c38a676a580511749bab3c538ed8b803
-vendor/lib/librs_adreno_sha1.so|28201ce01c442df4389273245be313ff4a741d6e
-vendor/lib64/egl/eglSubDriverAndroid.so|8edb19893decd259ba43d752b48e0a69c5788db4
-vendor/lib64/egl/libEGL_adreno.so|c97c8e14d26f53398c50122daf80a599f077398a
-vendor/lib64/egl/libGLESv1_CM_adreno.so|0adf2e094afdc3476198ef8ad52101cf9004eb5d
-vendor/lib64/egl/libGLESv2_adreno.so|4c9e3f723daf6a3f6d4301e3527472654c8bedf1
-vendor/lib64/egl/libQTapGLES.so|104e9cec67678174b92a698849aa2bcf52ba46ce
-vendor/lib64/egl/libq3dtools_adreno.so|8f6043f22c23c76e7e17bc9642957f648bec1e50
-vendor/lib64/egl/libq3dtools_esx.so|4f9b2bb6f492ea05b3da17b68e02effe611de0e8
-vendor/lib64/libC2D2.so|ff2d4947c7924376ff66517461246d238e221e05
-vendor/lib64/libCB.so|df167809abe16674a61742ba6efb208edd069a3b
-vendor/lib64/libOpenCL.so|84c7d8be13885c9346f73c09aaaedc3bce7667d9
-vendor/lib64/libRSDriver_adreno.so|e7628b78d034500c64d09fcaf5305971242e1acd
-vendor/lib64/libadreno_utils.so|04b3878ea84a99f133934580adfd6905f6cc102b
-vendor/lib64/libbccQTI.so|e79ba0450ce215bfb81e518cce310f378314b4e5
-vendor/lib64/libc2d30_bltlib.so|644a88f490cc883492d94b9f581127fb33f51415
-vendor/lib64/libgsl.so|5453da1723c3b014850165b42236ba26af11a7ad
+vendor/lib/librs_adreno.so|9d60513decf0af27a531e76459f12b5ec57b096c
+vendor/lib/librs_adreno_sha1.so|0d284a2bb885fd5b4499952778208a4e289b3869
+vendor/lib64/egl/eglSubDriverAndroid.so|268c051fcf15d3fa65e3384e1caf910ab94c6201
+vendor/lib64/egl/libEGL_adreno.so|2962c4804a73f49b70dd32916b7bcb2c33a8694f
+vendor/lib64/egl/libGLESv1_CM_adreno.so|14c9fa428416a3396688eb3ac780ef70884e4cd2
+vendor/lib64/egl/libGLESv2_adreno.so|a48e6a9c0fd5b2330b79c10f69dafc1bca9f3551
+vendor/lib64/egl/libQTapGLES.so|3b4bb2ba37ec84a4134816e7ca25d3ed9a806162
+vendor/lib64/egl/libq3dtools_adreno.so|c5058bf63d8b28af34e07648f5cfcb9f6742fd0c
+vendor/lib64/egl/libq3dtools_esx.so|982fad14cd7889560a9caab227ac10d8415b1e14
+vendor/lib64/libC2D2.so|4de717e68696444f6c83a313d41c9fc34deb05ea
+vendor/lib64/libCB.so|145d77227d6a6e582b91b68c735e34af6a4ee3f3
+vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
+vendor/lib64/libRSDriver_adreno.so|d1a6c079de14a665fa73cc217c46977ef84c08aa
+vendor/lib64/libadreno_utils.so|70dfef6b4b489cb6d95a75afc7ff9d6a8f5ee057
+vendor/lib64/libbccQTI.so|35c8a31625d47110b984ccdafd7e2f64eebffa23
+vendor/lib64/libc2d30_bltlib.so|737594a47bae5aad0ffc999896ba15693f7e4c4b
+vendor/lib64/libgsl.so|2a408f2d63eafd7312a2a4fa3e949cd176370e9e
 vendor/lib64/libhdr_tm.so|c388a9b14966583cde2c682c129fcf5cfa298239
-vendor/lib64/libllvm-glnext.so|dad8139672a9dcff4270a58599aa1b72d13e62fc
-vendor/lib64/libllvm-qcom.so|88f4199538ce887c91936bf70eef31615c938aa2
+vendor/lib64/libllvm-glnext.so|5a6c0b6983133b7e4750e8984b9f71a25b837a20
+vendor/lib64/libllvm-qcom.so|954937d9491e48caf5a6a1ac322f8feafcbbc4ca
 vendor/lib64/libmm-hdcpmgr.so|73d428151e99086ac3e48db95a660e7d7807a8e3
-vendor/lib64/librs_adreno.so|e41149794e719c7f743c4d800def68a5c8e5f9ca
-vendor/lib64/librs_adreno_sha1.so|f9d28682f9c219dfe086da9f3a15aaddbcd38a05
+vendor/lib64/librs_adreno.so|a887f0542d5fcd45a437db9bf04ac77ee480bd0e
+vendor/lib64/librs_adreno_sha1.so|cc1701cb536532fc6269142db82f7c2deec30cf5
 
 # Graphics (Postprocessing) - from daisy - QKQ1.191002.002
 etc/permissions/com.qti.snapdragon.sdk.display.xml|79a36c560f8cdbfeca03911fefc282bda25b2322
@@ -938,9 +938,9 @@ vendor/lib64/libsdm-diag.so|87373a043267b9b3bb923931a910119a9deb425f
 vendor/lib64/libsdmextension.so|133db0462e62fa331eb622b02528b5cdcc08a446
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
-# Graphics (Vulkan) - from daisy - QKQ1.191002.002
-vendor/lib64/hw/vulkan.msm8953.so|b09121b664897181c29ec5a529117772a971229b
-vendor/lib/hw/vulkan.msm8953.so|6142249d50da115d9fe3b20581dbeedd961727c3
+# Graphics (Vulkan) - from Taimen-RPP4.200409
+vendor/lib64/hw/vulkan.msm8953.so|7c00b59626361d0a81d0f222f93c08198bd5cc64
+vendor/lib/hw/vulkan.msm8953.so|7310dc473b52923cc02ba942cbe209002b583b8b
 
 # Graphics firmware - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
@@ -1008,13 +1008,13 @@ vendor/bin/pm-service|ec1cfea9a330de4379258d6538cba3d277a5b905
 vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
 vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
 
-# Power-off alarm - from LA.UM.8.6.r1-04000-89xx.0
--product/app/PowerOffAlarm/PowerOffAlarm.apk|c214e1f7de878aeebe642857d6283bbeca0c7a3e
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|42c161f4b3033ee2ce33ec3e505031e9137577e7
-vendor/bin/power_off_alarm|22e0d6e5cab225cb430b2c860f480b43103a4701
+# Power-off alarm - from Daisy-QKQ1.191002
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|28c768324a36e12a8c4a1a968caa25ad94a160fe
+vendor/bin/power_off_alarm|a98e375328492c0405d1712722bca0effa8cf2bb
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|cbf2dd1cd5cbf0dbb90f1563a77bc7fee608fb2e
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|680d4ad1999c8db44ee7d6240dda4ec1873e4c4d
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|656009a5cc2b3bc52a7706579a192a1f3328f37c
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|78f8db9acff8b3461d6d37c747b1bdb59e547bb5
 
 # QMI - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
@@ -1060,6 +1060,10 @@ vendor/lib64/libpdmapper.so|b837641e006ff90a49764d7ac78553de537acd74
 vendor/lib64/libqmi_cci.so|3a93b893312c34b987bddc16c6223dfc3a56d404
 vendor/lib64/libqsocket.so|6264041e0e897f78dc9b6a4be6424cbd927669d0
 
+# libril-qc-qmi - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
+vendor/lib64/libril-qc-qmi-1.so|e0c0b89181fa2eb1a4c09a7537f8e18bb68cf7b7
+vendor/lib64/libril-qc-hal-qmi.so|d707dc9d6a8d64e2f14d714d6384ddc032ffb707
+
 # Radio - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 -app/QtiTelephonyService/QtiTelephonyService.apk|420b39e20a5166940c1e2e55e8d9c92ec910cebb
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
@@ -1085,7 +1089,6 @@ vendor/lib64/liboemaids_vendor.so|a6f1aa8c68d9efe22f054aa68609af5b218154c9
 vendor/lib64/libqcmaputils.so|3a542dfda06a2c5824ba505ff7d03f920a5eaf43
 vendor/lib64/libqrtr.so|83676274fde1056a0507b4100a3a5423f5af5021
 vendor/lib64/libril-qc-ltedirectdisc.so|28008699ae1178e95fe6e87b2a4b18eb3fd682c2
-vendor/lib64/libril-qc-qmi-1.so|e0c0b89181fa2eb1a4c09a7537f8e18bb68cf7b7
 vendor/lib64/libril-qc-radioconfig.so|3ee0fa2ca0a2419a2629dfea6c7b4078d9ae11f6
 vendor/lib64/libril-qcril-hook-oem.so|159f6addcb48e2e02ddba6278e05bc5a312d8136
 vendor/lib64/librilqmiservices.so|c61998e2944ff427a9d06c0ab5db83986db412ea
@@ -1121,7 +1124,6 @@ vendor/etc/init/netmgrd.rc|711a0b87943ecd5308dc875395a9d67bd080dcef
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|091915c28a3bc574d39189688748cc922d9e65e4
-vendor/lib64/libril-qc-hal-qmi.so|d707dc9d6a8d64e2f14d714d6384ddc032ffb707
 
 # Radio (IMS) - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 lib64/com.qualcomm.qti.imscmservice@1.0.so|e622ddede56d6a9dcb9d3dbcff7c33ab3f4c1131
@@ -1186,11 +1188,11 @@ vendor/bin/thermal-engine|56fe0c449b13cede98a779d848e3a79804feb83f
 -vendor/lib64/libthermalclient.so|c36b6baf6e82a73e7afaf52589dada5248a69daf
 vendor/lib64/libthermalioctl.so|1d6587245c7e7148638f14254e2f61f6b5552857
 
-# Time services - from LA.UM.8.6.r1-04000-89xx.0
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|4a37afd1395758d946580af184a738e3c657b1e2
-vendor/bin/time_daemon|ccac9c14dcb7f2be8622bc64eeb1820ba595d0fd
+# Time services - from Daisy-QKQ1.191002
+-vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+vendor/bin/time_daemon|75b8a6a14cfb4424499ccb2bf1cad011df295d0e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|b056a9bc0ab6642369eda0ce3b097b036da2b24e
+vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
 
 # TUI - from LA.UM.8.6.r1-04000-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
@@ -1203,9 +1205,11 @@ vendor/lib/vndk-sp/libcutils.so|846d5769b71abca5b8fa185d4cf83a5cf1afed3c
 vendor/lib/vndk/libprocessgroup.so|62743ee7f648f0f742c35c9fbd7299186e91967a
 
 # Wi-Fi - from Tissot PKQ1.180917.001.V10.0.18.0.PDHMIXM
-vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
 vendor/firmware/wlan/prima/WCNSS_cfg.dat|1672af1c3d4f04804f31d4b79a6e59ea4a8b1926
 vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin|5e97baa4957609519835074071c879fbaf462266
+
+# wcnss - from Tissot PKQ1.180917.001.V10.0.18.0.PDHMIXM
+vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
 
 # WiFi Display - from LA.UM.8.6.r1-04000-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
