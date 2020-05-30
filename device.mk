@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-du
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-corvus
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -30,9 +30,6 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Enforce RRO
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
-
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
