@@ -27,6 +27,8 @@ type sysfs_backlightdim, sysfs_type, fs_type;
 type sysfs_fpsinfo, sysfs_type, fs_type;
 type sysfs_torch, sysfs_type, fs_type;
 type sysfs_fastcharge, sysfs_type, fs_type;
+type sysfs_mgain, sysfs_type, fs_type;
+type sysfs_sgain, sysfs_type, fs_type;
 
 # EAS PowerHal
 type sysfs_rpm, sysfs_type, fs_type;

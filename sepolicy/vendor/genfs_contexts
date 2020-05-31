@@ -14,6 +14,8 @@ genfscon proc /touchpanel	u:object_r:proc_touchpanel:s0
 # XiaomiParts
 genfscon sysfs /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
 genfscon sysfs /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
+genfscon sysfs /sys/kernel/sound_control/earpiece_gain                      u:object_r:sysfs_egain:s0
+genfscon sysfs /sys/kernel/sound_control/speaker_gain                       u:object_r:sysfs_sgain:s0
 
 # EAS PowerHal (Debugfs)
 genfscon debugfs /mnh_sm                              u:object_r:debugfs_easel:s0
