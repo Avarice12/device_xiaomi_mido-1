@@ -90,7 +90,8 @@ vendor.display.enable_default_color_mode=1 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.display.disable_skip_validate=1 \
-vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.enable_fb_ubwc=1 \
+persist.sys.sf.color_saturation=1.1
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
