@@ -30,5 +30,3 @@ type sysfs_torch, fs_type, sysfs_type;
 
 # EAS PowerHal
 type sysfs_rpm, sysfs_type, fs_type;
-type debugfs_easel, debugfs_type, fs_type;
-type debugfs_rpm, debugfs_type, fs_type;

@@ -16,6 +16,4 @@ allow hal_power_default sysfs_devfreq:dir search;
 allow hal_power_default sysfs_kgsl:lnk_file read;
 
 # Debugsfs
-allow hal_power_default debugfs_easel:dir search;
-allow hal_power_default debugfs_easel:file r_file_perms;
 allow hal_power_default debugfs_rpm:file r_file_perms;
