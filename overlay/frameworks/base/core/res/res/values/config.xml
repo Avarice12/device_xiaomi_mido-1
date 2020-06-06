@@ -633,8 +633,8 @@
 
     <!-- Smart charge sysfs node and value for suspend/resume charging-->
     <bool name="config_smartChargingAvailable">true</bool>
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
-    <string name="config_smartChargingSupspendValue" translatable="false">0</string>
-    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
 </resources>
 
