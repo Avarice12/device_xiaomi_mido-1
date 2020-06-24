@@ -212,3 +212,7 @@ persist.sys.usb.config=mtp,adb \
 ro.adb.secure=0 \
 ro.secure=0 \
 ro.debuggable=1
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+org.komodo.maintainer=Rafiester
