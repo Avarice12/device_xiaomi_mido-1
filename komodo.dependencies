@@ -7,8 +7,8 @@
   },
   {
     "remote": "github",
-    "repository": "Komodo-OS-Devices/kernel_xiaomi_mido",
+    "repository": "KudProject/kernel_xiaomi_msm8953-3.18",
     "target_path": "kernel/xiaomi/mido",
-    "branch": "ten"
+    "branch": "lineage-17.1"
   }
 ]
