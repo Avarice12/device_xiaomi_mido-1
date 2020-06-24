@@ -1,0 +1,14 @@
+[ 
+  {
+    "remote": "github",
+    "repository": "Komodo-OS-Devices/vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "ten"
+  },
+  {
+    "remote": "github",
+    "repository": "Komodo-OS-Devices/kernel_xiaomi_mido",
+    "target_path": "kernel/xiaomi/mido",
+    "branch": "ten"
+  }
+]
