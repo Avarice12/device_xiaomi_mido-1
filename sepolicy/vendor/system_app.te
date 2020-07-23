@@ -4,6 +4,11 @@ set_prop(system_app, fm_prop)
 # zram
 r_dir_file(system_app sysfs_zram)
 
+# Allow
+allow system_app system_data_file:dir { write };
+allow system_app sysfs_battery_supply:dir search;
+allow system_app sysfs_battery_supply:file rw_file_perms;
+
 # XiaomiParts
 allow system_app kcal_dev:dir search;
 allow system_app kcal_dev:file rw_file_perms;
