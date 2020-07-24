@@ -673,6 +673,9 @@
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+	
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">true</bool>
 
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
