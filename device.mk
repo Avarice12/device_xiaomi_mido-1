@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcompostprocbundle
+    libqcompostprocbundle \
+    tinymix
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -120,10 +121,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
-
-# Bluetooth
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -148,6 +145,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     copybit.msm8953 \
     gralloc.msm8953 \
+    hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
     liboverlay \
@@ -375,6 +373,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk_package \
     libstdc++.vendor
+
+# VR
+PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service \
+    vr.msm8953
 
 # Whitelisted apps
 PRODUCT_COPY_FILES += \
