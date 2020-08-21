@@ -8,7 +8,7 @@ vendor/lib/libmdsprpc.so|343bd2c3de3d5977b98bc7f4f4fd95add493f8f4
 vendor/lib64/libadsprpc.so|1b49735ca4ab61687f16fdad3c218f422257f806
 vendor/lib64/libadsp_default_listener.so|3f69a73528c8687607da617a549ec5a449af3cc0
 vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
-vendor/lib64/libfastcvopt.so|4c2f8b95479ae5416b61388d343b7dcd9b12d390
+vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
 vendor/lib64/libmdsprpc.so|e6a66132a0b0c5315e61a210a745576f35607f98
 
 # ADSP modules - LA.UM.8.6.r1-04400-89xx.0
@@ -856,19 +856,18 @@ vendor/lib64/vendor.qti.gnss@2.1.so|79d924c8006b33b358bf9e3d9a21ff2fe8a937df
 vendor/lib64/vendor.qti.gnss@3.0-service.so|53f5c24b57a3157b6b48fc56e6ab67b70ed8fa48
 vendor/lib64/vendor.qti.gnss@3.0.so|48b718e175dbf6156ded10a056a47d4988319395
 
-# Graphics - from LA.UM.8.6.r1-04400-89xx.0
+# Graphics - from Taimen-RPP4.200409
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
 vendor/lib/egl/eglSubDriverAndroid.so|d0f0f243aeb41720cbc052c2344918c5d588659c
 vendor/lib/egl/libEGL_adreno.so|677a2312488fe312a301170e70c701832a8bd89d
 vendor/lib/egl/libGLESv1_CM_adreno.so|17bbde3fd2a67234581be29370f45d12f91f1869
-vendor/lib/egl/libGLESv2_adreno.so|ad18d07d4919c82ecbe007392db9e84776b0c6f4
-vendor/lib/egl/libQTapGLES.so|08714851b37d164cfde1d991e021d273108c57fd
+vendor/lib/egl/libGLESv2_adreno.so|b1acd3bb277e4dd4151d6632eb924d46e6c481ef
+vendor/lib/egl/libQTapGLES.so|788a1833fd3e343a218c03b56b9569441ceb878a
 vendor/lib/egl/libq3dtools_adreno.so|8ac17e630fbc58771efafd30fe7b4c5d919a6b6d
-vendor/lib/hw/vulkan.msm8953.so|ce9e86e26d40ecf2f05ad60f93c43ebbb49efa67
 vendor/lib/libC2D2.so|c04a5ac1e576f63ebe91aba14bf917ee9e382be0
-vendor/lib/libCB.so|a86a3d79a63e2433347119beda119bdbb8764e1c
-vendor/lib/libOpenCL.so|5445775afc782df5d74880c59967a8a4b5cc1c1c
+vendor/lib/libCB.so|1806cba54e8175abd57e42dc8604b0d6ee190aa7
+vendor/lib/libOpenCL.so|df83abbc452249d07b52bf67c1c9b537c76019af
 vendor/lib/libRSDriver_adreno.so|51e8ebcd4584726cbee21a4486b6f37ce5e716f1
 vendor/lib/libadreno_utils.so|38fb831e64c26b1aac0fc70c8d83c66d17ad949a
 vendor/lib/libbccQTI.so|124156259b7900ac44c48dd9cf83b210d02d8c9d
@@ -879,17 +878,18 @@ vendor/lib/libllvm-glnext.so|56b3b6af433fd9275048ddc98ef3985e64fa40b5
 vendor/lib/libllvm-qcom.so|777b740bcc538a7471496f9e3bf8f26ef33ea6be
 vendor/lib/libmm-hdcpmgr.so|9a877103235d55a6ba788060cd974c09e769a0b5
 vendor/lib/librs_adreno.so|39dc67443757b55c9b5527e85959cfac2a245c36
+vendor/lib/hw/vulkan.msm8953.so|ce9e86e26d40ecf2f05ad60f93c43ebbb49efa67
 vendor/lib/librs_adreno_sha1.so|80b816edd0fc02f23aab53114b2331921672d1d4
+vendor/lib/libqseed3.so|f1add9c736e680d205471d23d1f5452f623174f5
 vendor/lib64/egl/eglSubDriverAndroid.so|8edb19893decd259ba43d752b48e0a69c5788db4
 vendor/lib64/egl/libEGL_adreno.so|6de48e6ba79a86a33e6f2aa193102b34200d49e7
 vendor/lib64/egl/libGLESv1_CM_adreno.so|9f8f826f14a769965eb77f2a8d7e273fb45eb89c
-vendor/lib64/egl/libGLESv2_adreno.so|24ea79287430d2b64c77d5a38cf8d14daa04dd44
-vendor/lib64/egl/libQTapGLES.so|de76dc6679e392874edf4b1028f7763f39255606
+vendor/lib64/egl/libGLESv2_adreno.so|8448323b799d72591a176f1a5d1eaad16e7ae383
+vendor/lib64/egl/libQTapGLES.so|c6eb23a9bb8fb6c502101f1bd5eeddc2b80bdec6
 vendor/lib64/egl/libq3dtools_adreno.so|df634f895bfc993482613f7026e5bdde3fe7783f
-vendor/lib64/hw/vulkan.msm8953.so|742c1182ad0ac5e48c12d279e085711d8046da73
 vendor/lib64/libC2D2.so|ff2d4947c7924376ff66517461246d238e221e05
-vendor/lib64/libCB.so|c461dd5108f4ff840841acc60cb4f85dc6ca7389
-vendor/lib64/libOpenCL.so|9db02d203536f029f206e10033feb5f54de06be6
+vendor/lib64/libCB.so|134eebe4c3123bea4bc600171da1a89468dfd4a3
+vendor/lib64/libOpenCL.so|21897637e702c4a97eb748934e9f1fc8880881c5
 vendor/lib64/libRSDriver_adreno.so|e7628b78d034500c64d09fcaf5305971242e1acd
 vendor/lib64/libadreno_utils.so|d8f0838ac724cae32d6492d26815fc166a49d8a7
 vendor/lib64/libbccQTI.so|e79ba0450ce215bfb81e518cce310f378314b4e5
@@ -897,10 +897,12 @@ vendor/lib64/libc2d30_bltlib.so|2f3477e9e4b391a9fb3e69ffd8744a55f3b6871a
 vendor/lib64/libgsl.so|9600e120e27d919bf5bbe0cbebb21b7c2c569678
 vendor/lib64/libhdr_tm.so|70c80f029af379c525acc9ac61719777f303f6b6
 vendor/lib64/libllvm-glnext.so|7b35afc89c04dc9c368884f267e0e33b3d60b0a9
+vendor/lib64/hw/vulkan.msm8953.so|742c1182ad0ac5e48c12d279e085711d8046da73
 vendor/lib64/libllvm-qcom.so|ab7b264dc1f01388d4dffd8ddf056820f8dd8a59
 vendor/lib64/libmm-hdcpmgr.so|73d428151e99086ac3e48db95a660e7d7807a8e3
 vendor/lib64/librs_adreno.so|5ec4bcbf396d1e2ed97201e84562c410dc1f52d4
 vendor/lib64/librs_adreno_sha1.so|a9b829487e668e1f8cf638260b8f90a2b4a30771
+vendor/lib64/libqseed3.so|fb7973800a5555838dc9bc36e81e16310cb33e39
 
 # Graphics (Postprocessing) - from LA.UM.8.6.r1-04400-89xx.0
 etc/permissions/com.qti.snapdragon.sdk.display.xml|79a36c560f8cdbfeca03911fefc282bda25b2322
@@ -1121,7 +1123,7 @@ vendor/radio/qcril_database/qcril.db|43b7d5e7ededc9cd5c0b1f7a8941d21d4eb0c9c1
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|68901007ba1a48ceb1b728fc3b5483dd51b5e3a0
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
-product/framework/qti-telephony-common.jar|14e32b1cb0fdc9d7802414e95e41376499b51b11
+product/framework/qti-telephony-common.jar|6981212a37fe3461b04f12f34a4c540ed9a05ae7
 vendor/bin/adpl|5d4b28d054f7209615195cb796e17d6facca33ee
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
@@ -1198,7 +1200,7 @@ vendor/bin/thermal-engine|f035777bb32c1f7a4a8ff2687e82a4e975568e52
 vendor/lib64/libthermalioctl.so|1d6587245c7e7148638f14254e2f61f6b5552857
 
 # Time services - from LA.UM.8.6.r1-04400-89xx.0
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|c935b678fdaed033513f044f6492361c3370f9f0
+-vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
 vendor/bin/time_daemon|ccac9c14dcb7f2be8622bc64eeb1820ba595d0fd
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|b056a9bc0ab6642369eda0ce3b097b036da2b24e
